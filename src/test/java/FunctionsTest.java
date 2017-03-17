@@ -19,7 +19,7 @@ public class FunctionsTest {
         System.out.println(predicate.test("a"));
         System.out.println(predicate.test("aa"));
 
-        List<String> palavras = Arrays.asList("rodrigo", "paulo", "caelum");
+        List<String> palavras = Arrays.asList("joão", "ana", "maria");
         Comparator<String> comparator = Comparator.comparingInt(String::length);
         palavras.sort(comparator);
         System.out.println(palavras);
