@@ -76,4 +76,19 @@ public class FunctionsTest {
         }
     }
 
+    @Test
+    public void some() {
+        float positivos;
+        float negativos;
+        float neutros;
+        int[] arr = {-4, 3, -9, 0, 4, 1};
+
+        positivos = Arrays.stream(arr).filter(a -> a > 0).count();
+        negativos = Arrays.stream(arr).filter(a -> a < 0).count();
+        neutros = Arrays.stream(arr).filter(a -> a == 0).count();
+
+        System.out.println(positivos / 6);
+        System.out.println(negativos / 6);
+        System.out.println(neutros / 6);
+    }
 }
